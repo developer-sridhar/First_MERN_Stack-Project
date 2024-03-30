@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 5000;
 const cors = require('cors')
 
-
+// process.env.NODE_OPTIONS = "--tls-min-v1.2";
 
 //middleware
 app.use(cors());
@@ -17,7 +17,9 @@ app.get('/', (req, res) => {
 //mongodb configuration
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-const uri = "mongodb+srv://book-store:xI4nC6LKX8LFBwEH@cluster0.o0mbbzq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb+srv://sridhar:Sridhar28@cluster0.lfgrjoe.mongodb.net/";
+
+
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -30,6 +32,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
+
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
@@ -102,7 +105,7 @@ async function run() {
     console.log("Successfully Connected to MongoDB!");
   } finally {
     // Ensures that the client will close when you finish/error
-    // await client.close();
+    //await client.close();
   }
 }
 run().catch(console.dir);

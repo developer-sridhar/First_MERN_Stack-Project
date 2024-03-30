@@ -38,6 +38,7 @@ const BannerCard = () => {
         <SwiperSlide></SwiperSlide>
         <SwiperSlide></SwiperSlide>
         <SwiperSlide></SwiperSlide>
+        <SwiperSlide></SwiperSlide>
       </Swiper>
     </div>
   )

@@ -1,0 +1,218 @@
+[
+    {
+        "_id":"65e709469ebb1bebc1398a35",
+        "bookTitle":"GENERAL ENGLISH I ",
+        "authorName":"B Yamuna Rajkumar, R. Uma",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2023/09/General_English-1_WEB.jpg",
+        "category":"English",
+        "bookDescription":"University of madras Syllabus GENERAL ENGLISH I  Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e709529ebb1bebc1398a36",
+        "bookTitle":"Web Technology",
+        "authorName":"Dr R Anandhi, Dr G Sekar",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/10/Web-Technology-scaled.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Web Technology Book",
+        "language":"English"
+    },
+    {
+        "_id":"65e7097e9ebb1bebc1398a37",
+        "bookTitle":"Web Technology",
+        "authorName":"Dr R Anandhi, Dr G Sekar",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/10/Web-Technology-scaled.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Web Technology Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e7098c9ebb1bebc1398a38",
+        "bookTitle":"Language Through Literature – I",
+        "authorName":"R Uma",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/11/Language-Through-Literature-I-Volume-2.jpg",
+        "category":"English",
+        "bookDescription":"University of madras Syllabus Language Through Literature – I Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf","language":"English"
+    },
+    {
+        "_id":"65e709a19ebb1bebc1398a39",
+        "bookTitle":"The Anubis Gates",
+        "authorName":"Tim Powers",
+        "imageUrl":"https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1344409006i/142296.jpg",
+        "category":"Fantasy",
+        "bookDescription":"Brendan Doyle, a specialist in the work of the early-nineteenth century poet William Ashbless, reluctantly accepts an invitation from a millionaire to act as a guide to time-travelling tourists. But while attending a lecture given by Samuel Taylor Coleridge in 1810, he becomes marooned in Regency London, where dark and dangerous forces know about the gates in time.",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e709ad9ebb1bebc1398a3a",
+        "bookTitle":"Mobile Computing",
+        "authorName":"Dr SP Ponnusamy, Dr N Manoharan, Dr S",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2023/02/Mobile-Computing-scaled.jpg",
+        "category":"Mathematics",
+        "bookDescription":"University of madras Syllabus Mobile Computing Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e709b69ebb1bebc1398a3b",
+        "bookTitle":"Mathematics I",
+        "authorName":"T G Bhaskar, Dr K Ezhilarsi Hilda Stanley",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/10/Mathematics-I.png","category":"Mathematics",
+        "bookDescription":"University of madras Syllabus Mathematics I Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e709c29ebb1bebc1398a3c",
+        "bookTitle":"Introduction to Computer Architecture and Microprocessor",
+        "authorName":"V Surya, M Rama Moorthi",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2024/02/Web_Cover_CAMP.jpeg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Introduction to Computer Architecture and Microprocessor Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e709cb9ebb1bebc1398a3d",
+        "bookTitle":"Java and Data Structures",
+        "authorName":"Dr S Behin Sam, Dr G Sekar",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/10/Java-Data-Structures-scaled.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Java and Data Structures Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e709d99ebb1bebc1398a3e",
+        "bookTitle":"Blockchain Technology",
+        "authorName":"A Chitra, R Anitha",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2023/02/Blockchain-Technology-scaled.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Blockchain Technology Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e709f59ebb1bebc1398a40",
+        "bookTitle":"Computer Organization",
+        "authorName":"V Surya, S Saravanapriya, M Rama Moorthi",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/10/Computer-Organization-scaled.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Computer Organization Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e70a069ebb1bebc1398a41",
+        "bookTitle":"Introduction to Cloud Computing",
+        "authorName":"Dr Mahalingam Palaniandi, Dr R Selvam",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2023/02/Cloud-Computing-scaled.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Introduction to Cloud Computing Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e70a0f9ebb1bebc1398a42",
+        "bookTitle":"Introduction to Data Science",
+        "authorName":"Dr M Mahadevi, Dr N Priya, Dr R Radha",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2023/02/Data-Science-scaled.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Introduction to Data Science Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e70a1f9ebb1bebc1398a43",
+        "bookTitle":"Operating System",
+        "authorName":"Dr S P Ponnusamy, Dr S Selvakani, Dr N Ravi",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/10/Operating-System-scaled.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Operating System Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e70a2a9ebb1bebc1398a44",
+        "bookTitle":"Computer Network",
+        "authorName":"Dr S P Ponnusamy, Dr S Rajeswari, Dr S Gokila",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/10/Computer-Network-scaled.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Computer Network Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e70a359ebb1bebc1398a45",
+        "bookTitle":"Artificial Intelligence and Expert System",
+        "authorName":"Dr S T Deepa, Dr B Gomathi, S G Packiavathy",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/10/Artificial-Intelligence-and-Expert-System_-scaled.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Artificial Intelligence and Expert System Book","bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e70a529ebb1bebc1398a46",
+        "bookTitle":"Relational Database Management System",
+        "authorName":"V Janaki, Dr S Rajeswari, B Sharmila",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/10/Relational-Database-Management-System-scaled.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Relational Database Management System Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e70a6c9ebb1bebc1398a47",
+        "bookTitle":"Allied Mathematics – II",
+        "authorName":"T G Bhaskar, Dr P Kandan",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/08/Allied_MATHS-2_02_PRINT.jpg",
+        "category":"Mathematics",
+        "bookDescription":"University of madras Syllabus Allied Mathematics – II Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e70a749ebb1bebc1398a48",
+        "bookTitle":"Environmental Studies Programme",
+        "authorName":"R Rajalakshmi, K Sudha, L Kanchana",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/10/Environmetal-Studies.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Environmental Studies Programme Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e70a7d9ebb1bebc1398a49",
+        "bookTitle":"Software Engineering",
+        "authorName":"Dr R Selvam",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/10/Cover_SE-for-BSc_Web-File.jpeg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Software Engineering Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e70a899ebb1bebc1398a4a",
+        "bookTitle":"IOT And Its Applications",
+        "authorName":"Dr Mahalingam Palaniandi",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2023/02/IOT-and-Its-Applications-scaled.jpg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus IOT And Its Applications Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    },
+    {
+        "_id":"65e70a969ebb1bebc1398a4b",
+        "bookTitle":"Python Programming",
+        "authorName":"Dr S P Ponnusamy, Dr S Gokila",
+        "imageUrl":"https://www.vr1publications.com/wp-content/uploads/2022/10/Web-Cover_Python_22.07.2023.jpeg",
+        "category":"ComputerScience",
+        "bookDescription":"University of madras Syllabus Python Programming Book",
+        "bookPDFURL":"https://example.com/books/the_enigmatic_quest.pdf",
+        "language":"English"
+    }
+]
