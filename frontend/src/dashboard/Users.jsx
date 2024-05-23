@@ -1,65 +1,53 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { AuthContext } from '../contexts/AuthProvider';
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import axios from 'axios';
 
-const Users = () => {
-  const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+const Users = ({ totalUsers, setTotalUsers }) => {
+    const { user, createUser } = useContext(AuthContext);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-  useEffect(() => {
-    const fetchUsers = async () => {
-      try {
-        // Load Firebase from CDN
-        const { default: firebase } = await import('firebase/app');
-        await import('firebase/firestore');
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyB5houU5qD4OcwZkkVxVC6yfdcifCIJyMQ",
-  authDomain: "sridhar-mern-bookstore.firebaseapp.com",
-  projectId: "sridhar-mern-bookstore",
-  storageBucket: "sridhar-mern-bookstore.appspot.com",
-  messagingSenderId: "823048403568",
-  appId: "1:823048403568:web:7387add6470f5ed677d2b5",
-  measurementId: "G-P7Z0Y79DVS"
-        };
-
-        if (!firebase.apps.length) {
-          firebase.initializeApp(firebaseConfig);
+    // Function to handle user creation
+    const handleCreateUser = async () => {
+        try {
+            await createUser(email, password);
+            // After successfully creating the user, update the total users count
+            setTotalUsers(totalUsers + 1);
+            // Clear input fields
+            setEmail('');
+            setPassword('');
+            alert('User created successfully!');
+        } catch (error) {
+            console.error("Error creating user:", error);
         }
-
-        const db = firebase.firestore();
-        const usersCollection = db.collection('users');
-        const snapshot = await usersCollection.get();
-        const usersData = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-        setUsers(usersData);
-      } catch (error) {
-        setError(error.message);
-      } finally {
-        setLoading(false);
-      }
     };
 
-    fetchUsers();
-
-    return () => {};
-  }, []);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
-
-  return (
-    <div>
-      <h1>All Users</h1>
-      <ul>
-        {users.map(user => (
-          <li key={user.id}>
-            <p>User ID: {user.id}</p>
-            <p>Email: {user.email}</p>
-            {/* Add more user details as needed */}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+    return (
+        <div>
+            <div>
+                <h2>Create New User</h2>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+                <input
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <button onClick={handleCreateUser}>Create User</button>
+            </div>
+            <div>
+                {user && user.isAdmin && (
+                    <div>Total Users: {totalUsers}</div>
+                )}
+            </div>
+        </div>
+    );
 };
 
 export default Users;

@@ -9,7 +9,8 @@ const UploadBook = () => {
     "Tamil",
     "Mathematics",
     "Novel",
-    "Autobiography"
+    "Autobiography",
+    "Commerce"
   ];
 
   const bookLanguage = [

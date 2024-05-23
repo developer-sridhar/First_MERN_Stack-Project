@@ -17,7 +17,7 @@ import Logout from "../components/Logout.jsx";
 import Users from "../dashboard/Users.jsx";
 import Favorite from "../components/Favorite.jsx";
 import Carts from './../components/Carts';
-import UserProfile from "../components/UserProfile.jsx";
+
 
 
 
@@ -49,10 +49,6 @@ const router = createBrowserRouter([
         {
           path: '/carts',
           element: <Carts/>
-        },
-        {
-          path: '/userprofile',
-          element: <UserProfile/>
         },
         {
           path: "/book/:id",

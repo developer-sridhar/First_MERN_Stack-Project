@@ -6,6 +6,7 @@ export const AuthContext = createContext();
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
+
 // Assuming `isAdmin` is a property of the user object obtained from authentication
 const login = (email, password) => {
     setLoading(true);

@@ -1,5 +1,3 @@
-// Login.jsx
-
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contexts/AuthProvider';
@@ -12,6 +10,7 @@ const Login = () => {
     const navigate = useNavigate();
     const from = location.state?.from?.pathname || "/";
     
+    
     const handleLogin = async (event) => {
         event.preventDefault();
         const form = event.target;
@@ -19,15 +18,11 @@ const Login = () => {
         const password = form.password.value;
         
         try {
+            // Call the login function with email and password
             await login(email, password);
             // If login successful, navigate to the previous route
             alert("Login Successfully");
             navigate(from, { replace: true });
-
-            // Check if user is admin
-            if (email === "admin@gmail.com" && password === "admin@123") {
-                navigate("/admin/dashboard");
-            }
         } catch (error) {
             // If login fails, set the error state
             setError("Email or Password is not correct");

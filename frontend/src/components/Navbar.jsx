@@ -7,12 +7,11 @@ import { FaCartShopping } from "react-icons/fa6";
 import { MdOutlineFavorite } from "react-icons/md";
 import { RiLogoutCircleRLine } from "react-icons/ri";
 import { GiWhiteBook } from "react-icons/gi";
-import Favorite from './Favorite';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
-    const { user } = useContext(AuthContext);
+    const { user, logout } = useContext(AuthContext); // Assuming you have a logout function in AuthContext
 
     // Toggle Menu
     const toggleMenu = () => {
@@ -40,8 +39,7 @@ const Navbar = () => {
         { link: "Home", path: "/" },
         { link: "About", path: "/about" },
         { link: "Shop", path: "/shop" },
-        { link: "Blog", path: "/blog" },
-        { link: "Login", path: "/login" } 
+        { link: "Blog", path: "/blog" }
     ];
 
     return (
@@ -50,7 +48,7 @@ const Navbar = () => {
                 <div className='flex justify-between items-center text-base gap-8'>
                     {/* Logo */}
                     <Link to="/" className='text-2xl font-bold text-violet-700 flex items-center gap-2'>
-                    <GiWhiteBook />Books Store
+                        <GiWhiteBook />Books Store
                     </Link>
 
                     {/* Nav items for Large Device */}
@@ -69,49 +67,47 @@ const Navbar = () => {
                         )}
                     </ul>
 
-                    {/* Button for Large Devices */}
-                    <div className='space-x-12 hidden lg:flex items-center uppercase'>
-                       
-                            {/* <h2 className='font-semibold'>My Profile</h2> */}
+                    {/* Conditionally render login/logout links */}
+                    {user ? (
+                        <div className='space-x-12 hidden lg:flex items-center uppercase'>
                             <div className='flex'>
-                            
-                            <img src={user?.photoURL || userImg} alt={user?.displayName || "Guest Account"} className='w-10 h-10 rounded-full mr-2 mt-1'/>
-                            <div className='align-left'>
-                                <Link to="/userprofile" >
-                                    <h2 className='font-semibold text-violet-700'>My Profile</h2>
-                                </Link>
-                                <div className='text-green-700'>
-                                {user?.displayName || "Demo User"}
+                                <img src={user && user.photoURL ? user.photoURL : userImg} alt={user && user.displayName && user.displayName.trim() !== '' ? user.displayName : "Guest Account"} className='w-10 h-10 rounded-full mr-2 mt-1'/>
+                                <div className='align-left'>
+                                    <Link to="/userDashboard">
+                                        <h2 className='font-semibold text-violet-700'>My Profile</h2>
+                                    </Link>
+                                    <div className='text-green-700'>
+                                        {user && user.displayName ? user.displayName : "Demo User"}
+                                    </div>
                                 </div>
                             </div>
+                            <div>
+                                <Link to="/favorite">
+                                    <MdOutlineFavorite className='text-red-500 text-2xl ml-4'/>
+                                    <h5 className='text-orange-500'>Favorites</h5>
+                                </Link>
                             </div>
-                            
-                            
-                        
-                    </div>
-
-                    <div>
-                        <Link to="/favorite">
-                            <MdOutlineFavorite className='text-red-500 text-2xl ml-4'/>
-                            <h5 className='text-orange-500'>Favorites</h5>
-                        </Link>
-                    </div>
-                    <div >
-                        <Link to="/carts" className='flex '>
-                            <FaCartShopping className='text-blue-500 mt-3 text-2xl' />
-                            <div className='text-sm'>
-                                <h5 className='ml-3 bg-green-400 text-white rounded text-center font-bold'>Items</h5>
-                                <h5 className='ml-3 mt-2 pl-2 pr-2 bg-green-400 text-white rounded text-center font-bold'>₹ 150</h5>
+                            <div >
+                                <Link to="/carts" className='flex '>
+                                    <FaCartShopping className='text-blue-500 mt-3 text-2xl' />
+                                    <div className='text-sm'>
+                                        <h5 className='ml-3 bg-green-400 text-white rounded text-center font-bold'>Items</h5>
+                                        <h5 className='ml-3 mt-2 pl-2 pr-2 bg-green-400 text-white rounded text-center font-bold'>₹ 150</h5>
+                                    </div>
+                                </Link>
                             </div>
-                        </Link>
-                    </div>
-                    <div className='text-2xl text-red-700 hover:text-red-500'>
-                        <Link to="/logout">
-                            <RiLogoutCircleRLine />
-                            <h2 className='text-sm'>Logout</h2>
-                        </Link>
-                        
-                    </div>
+                            <div className='text-2xl text-red-700 hover:text-red-500'>
+                                <Link to="/logout">
+                                    <button onClick={logout}>
+                                        <RiLogoutCircleRLine />
+                                        <h2 className='text-sm'>Logout</h2>
+                                    </button>
+                                </Link>
+                            </div>
+                        </div>
+                    ) : (
+                        <Link to="/login" className='text-base text-black uppercase cursor-pointer hover:text-violet-700'>Login</Link>
+                    )}
 
                     {/* Menu Button for the Mobile Devices */}
                     <div className="md:hidden">
